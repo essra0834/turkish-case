@@ -1,0 +1,28 @@
+{
+  "name": "turkish-case",
+  "version": "0.1.0",
+  "description": "Turkish-correct upper/lower/title case, comparison, sorting and slugs (i/İ, ı/I) with no ICU or locale dependency.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test test/*.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": ["turkish", "türkçe", "case", "uppercase", "lowercase", "locale", "i18n", "slugify", "sort", "dotless-i"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/essra0834/turkish-case.git" },
+  "engines": { "node": ">=18" },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
